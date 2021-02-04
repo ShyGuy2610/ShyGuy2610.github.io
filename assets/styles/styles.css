@@ -116,11 +116,15 @@ section .row div
 {
     animation: animate-bg1 80s linear infinite;
     animation-delay: -80s;
+    -webkit-animation: animate-bg1 80s linear infinite;
+    -webkit-animation-delay: -80s;
 }
 section .row div:nth-child(2)
 {
     animation: animate-bg2 80s linear infinite;
     animation-delay: -40s;
+    -webkit-animation: animate-bg2 80s linear infinite;
+    -webkit-animation-delay: -40s;
 }
 @keyframes animate-bg1
 {
@@ -133,6 +137,17 @@ section .row div:nth-child(2)
         transform: translateX(-100%);
     }
 }
+@-webkit-keyframes animate-bg1
+{
+    0%
+    {
+        -webkit-transform: translateX(100%);
+    }
+    100%
+    {
+        -webkit-transform: translateX(-100%);
+    }
+}
 @keyframes animate-bg2
 {
     0%
@@ -142,6 +157,17 @@ section .row div:nth-child(2)
     100%
     {
         transform: translateX(-200%);
+    }
+}
+@-webkit-keyframes animate-bg2
+{
+    0%
+    {
+        -webkit-transform: translateX(0%);
+    }
+    100%
+    {
+        -webkit-transform: translateX(-200%);
     }
 }
  
